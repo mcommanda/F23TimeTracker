@@ -62,14 +62,13 @@ dependencies {
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation("com.google.firebase:firebase-auth-ktx")
 
-    dependencies {
-        // Import the BoM for the Firebase platform
+
         implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
 
         // Add the dependency for the Firebase Authentication library
         // When using the BoM, you don't specify versions in Firebase library dependencies
         implementation("com.google.firebase:firebase-auth")
-    }
+
 
     //these dependencies are required for the viewmodel which gives us the ability to
     //have data persists even if an activity is closed (i.e. rotating the device)

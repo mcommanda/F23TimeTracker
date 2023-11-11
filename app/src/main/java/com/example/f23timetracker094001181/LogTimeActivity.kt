@@ -88,7 +88,7 @@ class LogTimeActivity : AppCompatActivity() {
                 val timeRecord = TimeRecord(category, startTime!!, stopTime!!)
                 projectSelected.addTimeRecord(timeRecord)
 
-                binding.totalTimeTextView.text = getString(R.string.total_time_min) + timeRecord.getDuration()
+
 
                 //update the DB
                 val db = FirebaseFirestore.getInstance().collection("projects")
